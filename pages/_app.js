@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
+import Router from 'next/router'
+
 import '../styles/bootstrap.rtl.min.css';
 import '../styles/globals.css'
 import 'react-toastify/dist/ReactToastify.css';
