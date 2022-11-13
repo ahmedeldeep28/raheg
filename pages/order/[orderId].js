@@ -75,7 +75,7 @@ function Order({ order }) {
                             </div>
                         </div>
                         <div className="col-md-7">
-                            <h2 className="h2">شروط استلام المنتج</h2>
+                            <h2 className="h2">المنتجات التي طلبتها</h2>
                             <table className="table">
                                 <thead>
                                     <tr>
