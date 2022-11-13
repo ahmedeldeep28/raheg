@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import OrderForm from './../components/forms/OrderForm';
 import { useContext } from 'react'
 import { cartContext } from './../context/cartContext'
+import OrderForm from './../components/Forms/OrderForm';
+
 function Cart() {
     const { cart, deleteCart } = useContext(cartContext)
 

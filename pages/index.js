@@ -5,7 +5,6 @@ import ProductCard from './../components/cards/ProductCard';
 import FeatureCard from './../components/cards/FeatureCard';
 import ReviweCard from './../components/cards/ReviweCard';
 import HeadSection from './../components/layout/HeadSection';
-import ContactForm from '../components/forms/ContactForm';
 import ArticleCard from './../components/cards/ArticleCard';
 import { fetchApi } from './../utils/handelApi';
 import HandelError from './../components/HandelError';
@@ -14,6 +13,7 @@ import { EffectCreative } from "swiper";
 
 import 'swiper/css';
 import "swiper/css/effect-creative";
+import ContactForm from './../components/Forms/ContactForm';
 
 export default function Home({ products, articles, error }) {
 
