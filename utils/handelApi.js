@@ -17,7 +17,11 @@ export async function deleteApi(endPond) {
         const { data } = await axios.delete(`${baseUrl}/${endPond}`);
         return data
     } catch (error) {
-        throw error.message
+        if(error.response) {
+            throw error.response.data.message
+        } else {
+            throw error.message
+        }
     }
 
 }

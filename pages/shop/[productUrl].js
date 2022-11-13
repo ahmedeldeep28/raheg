@@ -79,7 +79,7 @@ function ProductUrl({ product }) {
                 <strong className="fs-5 mb-3">اجمالي المطلوب دفعه: {amount * priceFinal + 50} جنيه</strong>
                 <div className="w-100 d-flex align-items-center justify-content-between">
                   <button className='btn btn-success' onClick={increase} disabled={amount >= 10}>زود الكمية</button>
-                  <p>{amount} {typeAmount}</p>
+                  <p>({amount}) -  {typeAmount}</p>
                   <button className='btn btn-danger' onClick={decrease} disabled={amount <= 1}>نقص الكمية</button>
                 </div>
                 <button className="btn btn-primary w-100" onClick={handelProductToCart}>

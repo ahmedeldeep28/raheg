@@ -12,9 +12,10 @@ function OrderForm({ orderInfo, fromCart }) {
     const { clearCart } = useContext(cartContext)
     const {push} = useRouter()
     
-    const total = orderInfo.map((el) => {
-        return el.amount * el.productPrice + 50
-    })
+
+    let totalPrice = orderInfo.reduce((acc,product)=>{
+        return (acc += product.amount * product.productPrice + 50)
+    },0)
 
     const initialValues = {
         products: orderInfo,
@@ -23,7 +24,7 @@ function OrderForm({ orderInfo, fromCart }) {
         area: '',
         city: '',
         address: '',
-        total: total,
+        total: totalPrice,
     }
 
     const validationSchema = object({
@@ -90,7 +91,7 @@ function OrderForm({ orderInfo, fromCart }) {
                         </datalist>
                         <FormField propsInput={props} type="text" name="city" label="المدينه" placeholder="اكتب  المدينه" />
                         <FormField propsInput={props} name="address" label="العنوان" placeholder="اكتب العنوان " />
-                        <p>اجمالي المطلوب دفعه: {total} جنيه</p>
+                        <p>اجمالي المطلوب دفعه: {totalPrice} جنيه</p>
                         <button className="btn btn-primary" disabled={props.isSubmitting}>
                             {props.isSubmitting
                                 ?

@@ -13,7 +13,7 @@ function Cart() {
                 <td>{idx}</td>
                 <th>{el.productName}</th>
                 <td>{el.productPrice} جنيه</td>
-                <td>{el.amount} {el.typeAmount}</td>
+                <td>({el.amount}) - {el.typeAmount}</td>
                 <td>{el.amount * el.productPrice} جنيه</td>
                 <td><button className="btn btn-danger btn-sm p-2" onClick={() => deleteCart(el.id)}>حذف</button> </td>
             </tr>
