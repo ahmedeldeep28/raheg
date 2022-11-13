@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import HeroPages from './../components/layout/HeroPages';
-import ContactForm from './../components/forms/ContactForm';
+import ContactForm from '../components/forms/ContactForm';
 
 function Contact() {
   return (

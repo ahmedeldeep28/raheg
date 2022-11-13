@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import OrderForm from './../components/Forms/OrderForm';
+import OrderForm from './../components/forms/OrderForm';
 import { useContext } from 'react'
 import { cartContext } from './../context/cartContext'
 function Cart() {

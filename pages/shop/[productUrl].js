@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCreative } from "swiper";
 import 'swiper/css';
 import "swiper/css/effect-creative";
-import OrderForm from '../../components/Forms/OrderForm';
+import OrderForm from '../../components/forms/OrderForm';
 import { cartContext } from '../../context/cartContext'
 import { toast } from 'react-toastify';
 import { baseUrl } from "../../utils/handelApi"
