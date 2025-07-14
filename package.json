@@ -25,5 +25,8 @@
     "@types/bootstrap": "^5.2.6",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
