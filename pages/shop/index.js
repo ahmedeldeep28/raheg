@@ -18,6 +18,7 @@ function Shop({ products, error }) {
         </div>
       )
     })
+    
     if (products.length == 0 && !query.category) {
       return <HandelError image="bee-honey.png" text='لا يوجد منتجات علي الموقع الان' />
     } else if (products.length == 0) {

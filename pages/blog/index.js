@@ -7,14 +7,14 @@ import { fetchApi } from '../../utils/handelApi';
 function Blog({ articles, error }) {
 
   // handel articles List 
+  const articlesMaping = articles.map((article) => {
+    return (
+      <div className="col-12 col-sm-6 " key={article._id}>
+        <ArticleCard articleData={article} />
+      </div>
+    )
+  })
   const articlesList = () => {
-    const articlesMaping = articles.map((article) => {
-      return (
-        <div className="col-12 col-sm-6 " key={article._id}>
-          <ArticleCard articleData={article} />
-        </div>
-      )
-    })
     if (articles.length == 0) {
       return <HandelError image="bee-honey.png" text='لا يوجد مقالات علي الموقع الان' />
     }

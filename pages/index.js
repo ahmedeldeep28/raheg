@@ -19,7 +19,7 @@ export default function Home({ products, articles, error }) {
 
   // handel products List 
   const productsList = () => {
-    const productsMaping = products.map((product) => {
+    const productsMapping = products.map((product) => {
       return (
         <div className="col-12 col-sm-6 col-md-4 col-lg-4" key={product._id}>
           <ProductCard productData={product} />
@@ -30,13 +30,13 @@ export default function Home({ products, articles, error }) {
       return <HandelError image="bee-honey.png" text='لا يوجد منتجات علي الموقع الان' />
     }
     else {
-      return <div className="row g-3 mt-3">{productsMaping}</div>
+      return <div className="row g-3 mt-3">{productsMapping}</div>
     }
   }
 
   // handel articles List 
   const articlesList = () => {
-    const articlesMaping = articles.map((article) => {
+    const articlesMapping = articles.map((article) => {
       return (
         <div className="col-12 col-sm-6 " key={article._id}>
           <ArticleCard articleData={article} />
@@ -47,7 +47,7 @@ export default function Home({ products, articles, error }) {
       return <HandelError image="bee-honey.png" text='لا يوجد منتجات علي الموقع الان' />
     }
     else {
-      return <div className="row g-3 mt-3">{articlesMaping}</div>
+      return <div className="row g-3 mt-3">{articlesMapping}</div>
     }
   }
 
